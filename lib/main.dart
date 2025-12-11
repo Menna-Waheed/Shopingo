@@ -1,4 +1,7 @@
+import 'package:e_commerce/core/utils/app_route.dart';
 import 'package:e_commerce/core/utils/app_theme.dart';
+import 'package:e_commerce/feature/ui/auth/login/login_screen.dart';
+import 'package:e_commerce/feature/ui/auth/register/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,6 +28,11 @@ class MyApp extends StatelessWidget{
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: AppTheme.lightTheme,
+          initialRoute: AppRoute.loginRoute,
+          routes: {
+            AppRoute.loginRoute: (context) => LoginScreen(),
+            AppRoute.registerRoute: (context) => RegisterScreen(),
+          },
         );
       },
     );
