@@ -1,0 +1,13 @@
+import 'package:e_commerce/domin/entites/request/login_request.dart';
+import 'package:e_commerce/domin/entites/response/auth_response.dart';
+import 'package:e_commerce/domin/repository/auth/auth_repository.dart';
+
+class LoginUseCase {
+  AuthRepository authRepository;
+
+  LoginUseCase({required this.authRepository});
+
+  Future<AuthResponse> invoke(LoginRequest loginRequest) {
+    return authRepository.login(loginRequest);
+  }
+}
