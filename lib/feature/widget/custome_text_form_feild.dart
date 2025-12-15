@@ -24,7 +24,7 @@ class CustomeTextFormFeild extends StatelessWidget {
   Widget? prefixIcon;
   bool? obscureText;
 
-  OnValidator validator;
+  String? Function(String?)? validator;
   TextEditingController? controller;
   TextInputType? keyboardType;
 
