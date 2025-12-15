@@ -28,6 +28,14 @@ class AppTextStyle {
       fontSize: 20,
       fontWeight: FontWeight.w600
   );
+
+
+  static TextStyle regular16custom = GoogleFonts.poppins(
+      color: AppColor.customeBlue,
+      fontSize: 16,
+      fontWeight: FontWeight.w400
+  );
+
   static TextStyle light18hintColor = GoogleFonts.poppins(
       color: AppColor.whiteColor,
       fontSize: 18,

@@ -8,4 +8,8 @@ class AuthResponse {
   final String? token;
 
   AuthResponse({this.message, this.user, this.token});
+
+  AuthResponse toAuthResponse() {
+    return AuthResponse(message: message, token: token, user: user);
+  }
 }
